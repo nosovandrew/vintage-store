@@ -1,7 +1,7 @@
 {
     "name": "vintage-store",
     "version": "0.1.0",
-    "description": "E-commerce app for my vintage fashion brand.",
+    "description": "E-commerce app for my vintage fashion store.",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
