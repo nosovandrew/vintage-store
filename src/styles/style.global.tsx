@@ -4,35 +4,43 @@ import { media } from './media';
 
 const GlobalStyle = createGlobalStyle`
     :root {
-        // mobile size (default)
-        // colors
+        /* MOBILE SIZE (default) */
+
+        /* Colors */
         --white: hsl(0, 0%, 100%);
         --black: hsl(0, 0%, 0%);
         --gray-96: hsl(0, 0%, 96%);
         --gray-93: hsl(0, 0%, 93%);
         --gray-67: hsl(0, 0%, 67%); // gray text
 
-        // color vars
+        /* Color vars */
+        // text
         --text-primary: var(--black);
         --text-secondary: var(--white);
+        --text-gray: var(--gray-67);
+        // background
         --bg-primary: var(--white);
+        // btns
+        --btn-bg-color: var(--white);
+        --btn-default-color: var(--black);
+        --btn-disabled-color: var(--gray-67);
 
-        // font
+        /* Font */
         --font-sans-serif: 'Rubik', 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', sans-serif;
         --font-pixel: 'Cozette', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', sans-serif; // not using!
         --basic-font-weight: 500; // 500 for Rubik
         --basic-font-size: 16px; // 16 for Rubik
 
-        // spacing
+        /* Spacing */
         --layout-padding: .5rem;
         --basic-spacing: .5rem;
 
-        // other
+        /* Other */
         --basic-rounded: .5rem;
         --full-rounded: 10000px;
         
         ${media.lg} {
-            // desktop size
+            /* DESKTOP SIZE */
             
             --basic-font-size: 18px;
         }

@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next';
 import { products } from '@/data/products';
 import { Product } from '@/types/product';
 import { useCartContext } from '@/contexts/cart';
+import StyledButton from '@/components/atoms/buttons';
 
 export const getStaticProps: GetStaticProps = () => {
     return {
@@ -26,8 +27,8 @@ const Home = ({ products }: HomeProps) => {
                 {products.map((p) => (
                     <li key={p.id}>
                         <p>{p.title}</p>
-                        <button
-                            onClick={() =>
+                        <StyledButton
+                            onClickHandler={() =>
                                 addProductToCart({
                                     ...p,
                                     quantity: 1,
@@ -35,7 +36,7 @@ const Home = ({ products }: HomeProps) => {
                             }
                         >
                             Add to cart
-                        </button>
+                        </StyledButton>
                     </li>
                 ))}
             </ul>
